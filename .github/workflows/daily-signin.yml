@@ -1,6 +1,8 @@
 name: Comics Daily Sign-in
 
 on:
+  push:
+    branches: [main]
   schedule:
     # 每天 UTC 时间 0:30 执行 (对应北京时间 8:30)
     - cron: '30 0 * * *'
